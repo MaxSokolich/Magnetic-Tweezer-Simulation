@@ -185,7 +185,7 @@ if __name__ == "__main__":
         ax.clear()
         Ra = reluctance(l_R,perm0,perm_R, A_R) #check
         #I = np.array([random.uniform(-1,1),random.uniform(-1,1),random.uniform(-1,1),random.uniform(-1,1)])
-        I = np.array([0,0,0,0])#currents[jj]
+        I = currents[jj]
         Ki = Ki_matrix()
         Q = Q_matrix(Nc,perm0,Ra, Ki, I) #check
 
@@ -208,7 +208,7 @@ if __name__ == "__main__":
         ax.quiver(x,y,Bfield[0],Bfield[1],color='r', scale = None)
         speed = np.sqrt((Bfield[0])**2+(Bfield[1])**2)
         ax.streamplot(x,y,Bfield[0],Bfield[1],color=speed,cmap='coolwarm',density = 2,norm = colors.LogNorm(vmin=speed.min(), vmax=speed.max() ))
-        plt.pause(1)
+        plt.pause(.00001)
     
 
     

@@ -1,3 +1,4 @@
+# Magnetic Tweezer Simulation Files
 python files pertaining to modeling magnetic tweezers capable of maipulating a micron sized magnetic object using magnetic gradients. attached are some attempted simulations of the magnetic field and force field generated.
 
 based on the following paper. snippets from the paper can be found below: 
